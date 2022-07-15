@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-family-base: Inter;
+    --font-family-secondary: Metropolis;
+  }
+
+  @font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis'), local('Roboto'), local('sans-serif'),
+      url('../assets/fonts/Metropolis-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis'), local('Roboto'), local('sans-serif'),
+      url('../assets/fonts/Metropolis-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis'), local('Roboto'), local('sans-serif'),
+      url('../assets/fonts/Metropolis-Medium.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Metropolis';
+    src: local('Metropolis'), local('Roboto'), local('sans-serif'),
+      url('../assets/fonts/Metropolis-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html {
+    @apply h-full;
+  }
+
+  body {
+    @apply h-full;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-primary {
+    background: linear-gradient(119.89deg, #20d1fd 0%, #9642ff 100%);
+  }
+}
