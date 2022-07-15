@@ -7,7 +7,8 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "svgs": "svgr src/assets/svgs -d src/components/svgs --filename-case kebab --ignore-existing --icon"
+    "svgs": "svgr src/assets/svgs -d src/components/common/svgs --filename-case kebab --ignore-existing ",
+    "icons": "svgr src/assets/icons -d src/components/common/icons --filename-case kebab --ignore-existing --icon"
   },
   "dependencies": {
     "@headlessui/react": "^1.5.0",
