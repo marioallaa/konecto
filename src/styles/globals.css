@@ -56,7 +56,7 @@
   }
 
   body {
-    @apply h-full antialiased bg-body text-primary;
+    @apply h-full antialiased font-base bg-body text-primary;
   }
 
   h1,
