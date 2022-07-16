@@ -45,7 +45,7 @@ const Hero = () => {
                       <input
                         id="email"
                         type="email"
-                        placeholder="Enter your email"
+                        placeholder="konecto.me/karen-daily"
                         className="input-main input-dark"
                       />
                     </div>
@@ -71,9 +71,15 @@ const Hero = () => {
                     Powered by
                   </span>
                   <div className="flex items-center justify-between gap-2 mt-6">
-                    <TupleLogo />
-                    <WorkationLogo />
-                    <StaticKitLogo />
+                    <a href="#">
+                      <TupleLogo />
+                    </a>
+                    <a href="#">
+                      <WorkationLogo />
+                    </a>
+                    <a href="#">
+                      <StaticKitLogo />
+                    </a>
                   </div>
                 </div>
               </div>
