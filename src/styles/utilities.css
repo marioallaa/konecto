@@ -1,0 +1,7 @@
+@tailwind utilities;
+
+@layer utilities {
+  .bg-gradient-primary {
+    background: linear-gradient(119.89deg, #20d1fd 0%, #9642ff 100%);
+  }
+}

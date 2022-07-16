@@ -1,6 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @layer base {
   :root {
@@ -53,14 +51,5 @@
   }
 }
 
-@layer components {
-  .btn-dark {
-    @apply inline-block px-4 py-2 text-base font-medium text-white bg-gray-900 border border-transparent rounded-md hover:bg-gray-800;
-  }
-}
-
-@layer utilities {
-  .bg-gradient-primary {
-    background: linear-gradient(119.89deg, #20d1fd 0%, #9642ff 100%);
-  }
-}
+@import '../styles/components.css';
+@import '../styles/utilities.css';

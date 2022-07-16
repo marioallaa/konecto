@@ -4,7 +4,7 @@ import Footer from '../footer'
 import Header from '../header'
 import { twMerge } from 'tailwind-merge'
 
-const SharedLayout = ({ children, title, className = '' }) => {
+const SharedLayout = ({ children, title, className }) => {
   return (
     <>
       <Head>
@@ -20,6 +20,7 @@ const SharedLayout = ({ children, title, className = '' }) => {
 SharedLayout.propTypes = {
   children: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
+  className: PropTypes.string,
 }
 
 export default SharedLayout
