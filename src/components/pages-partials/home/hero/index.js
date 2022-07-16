@@ -6,7 +6,7 @@ import {
 import { ChevronRightIcon } from '@heroicons/react/solid'
 import NextLink from 'next/link'
 
-const Hero = () => {
+const HeroSection = () => {
   return (
     <div className="pt-10 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
       <div className="mx-auto max-w-7xl lg:px-8">
@@ -101,4 +101,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default HeroSection

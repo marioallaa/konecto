@@ -1,10 +1,12 @@
 import SharedLayout from '@/components/layout/shared-layout'
-import Hero from './hero'
+import AnalyticsFutureSection from './analytics-future'
+import HeroSection from './hero'
 
 const HomePageMain = () => {
   return (
     <SharedLayout title="Home">
-      <Hero />
+      <HeroSection />
+      <AnalyticsFutureSection />
     </SharedLayout>
   )
 }
