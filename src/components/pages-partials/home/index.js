@@ -3,6 +3,7 @@ import AnalyticsSection from './analytics-section'
 import MediaKitSection from './media-kit-section'
 import HeroSection from './hero'
 import LaunchSection from './launch-section'
+import ThingsSection from './things-section'
 
 const HomePageMain = () => {
   return (
@@ -11,6 +12,7 @@ const HomePageMain = () => {
       <AnalyticsSection />
       <LaunchSection />
       <MediaKitSection />
+      <ThingsSection />
     </SharedLayout>
   )
 }

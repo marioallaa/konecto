@@ -1,4 +1,4 @@
-import { InboxGradient } from '@/components/common/icons'
+import { InboxGradientIcon } from '@/components/common/icons'
 import Image from 'next/image'
 
 const LaunchSection = () => {
@@ -7,7 +7,7 @@ const LaunchSection = () => {
       <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
         <div>
           <div>
-            <InboxGradient width={48} height={48} />
+            <InboxGradientIcon width={48} height={48} />
             <div className="z-50 mt-6">
               <div className="sm:max-w-3xl">
                 <h2 className="text-3xl font-extrabold tracking-tighter font-base">

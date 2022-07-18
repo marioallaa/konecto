@@ -9,6 +9,8 @@ module.exports = {
         color: {
           'k-light-blue': 'var(--k-light-blue)',
           'k-purple': 'var(--k-purple)',
+          'dark-1': 'var(--dark-1)',
+          'dark-2': 'var(--dark-2)',
         },
       },
       textColor: {
@@ -18,6 +20,7 @@ module.exports = {
       },
       backgroundColor: {
         body: 'var(--bg-body)',
+        card: 'var(--dark-1)',
       },
       fontFamily: {
         base: ['var(--font-family-base)', 'sans-serif'],

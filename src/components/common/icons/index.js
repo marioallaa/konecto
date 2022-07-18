@@ -1,2 +1,5 @@
-export { default as InboxGradient } from './inbox-gradient'
-export { default as SparklesGradient } from './sparkles-gradient'
+export { default as BuildingIcon } from './building-icon'
+export { default as InboxGradientIcon } from './inbox-gradient-icon'
+export { default as InfoCardIcon } from './info-card-icon'
+export { default as SparklesGradientIcon } from './sparkles-gradient-icon'
+export { default as TagIcon } from './tag-icon'

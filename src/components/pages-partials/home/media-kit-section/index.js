@@ -1,4 +1,4 @@
-import { SparklesGradient } from '@/components/common/icons'
+import { SparklesGradientIcon } from '@/components/common/icons'
 import NextLink from 'next/link'
 
 const MediaKitSection = () => {
@@ -7,7 +7,7 @@ const MediaKitSection = () => {
       <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
         <div className="max-w-xl px-4 mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
           <div>
-            <SparklesGradient width={48} height={48} />
+            <SparklesGradientIcon width={48} height={48} />
             <div className="z-50 mt-6">
               <div className="sm:max-w-3xl">
                 <h2 className="text-3xl font-extrabold tracking-tighter font-base">
