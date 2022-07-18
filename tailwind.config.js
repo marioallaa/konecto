@@ -23,6 +23,9 @@ module.exports = {
         base: ['var(--font-family-base)', 'sans-serif'],
         secondary: ['var(--font-family-secondary)', 'sans-serif'],
       },
+      backgroundImage: {
+        'launch-section': 'url(/images/home/launch-section.png)',
+      },
     },
   },
   corePlugins: {

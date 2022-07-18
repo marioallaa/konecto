@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const AnalyticsFutureSection = () => {
+const AnalyticsSection = () => {
   return (
     <div className="relative pt-16 sm:pt-24 lg:pt-32">
       <div className="max-w-md px-4 mx-auto text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
@@ -20,8 +20,8 @@ const AnalyticsFutureSection = () => {
         <div className="mt-12 aspect-w-16 aspect-h-9">
           <Image
             className="rounded-lg shadow-xl ring-1 ring-black ring-opacity-5"
-            src="/images/screen-img.png"
-            alt="analytics future"
+            src="/images/home/screen-img.png"
+            alt="analytics section"
             layout="fill"
             objectFit="cover"
           />
@@ -31,4 +31,4 @@ const AnalyticsFutureSection = () => {
   )
 }
 
-export default AnalyticsFutureSection
+export default AnalyticsSection
