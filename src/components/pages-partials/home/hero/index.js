@@ -11,7 +11,7 @@ const HeroSection = () => {
     <div className="pt-10 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
       <div className="mx-auto max-w-7xl lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-          <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
+          <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center lg:z-50">
             <div className="lg:py-24">
               <NextLink href="#">
                 <a className="inline-flex items-center p-1 pr-2 text-white bg-gray-900 rounded-full sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
@@ -86,14 +86,20 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
-            <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
-              {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-              <img
+            {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
+            {/* <img
                 className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg"
                 alt=""
-              />
-            </div>
+              /> */}
+            <video
+              autoPlay
+              loop
+              muted
+              className="w-full h-full mix-blend-lighten lg:scale-[2.4]"
+            >
+              <source src="/videos/hero-video.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>

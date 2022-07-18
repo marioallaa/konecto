@@ -29,6 +29,10 @@ module.exports = {
       backgroundImage: {
         'launch-section': 'url(/images/home/launch-section.png)',
       },
+      screens: {
+        xs: '475px',
+        lgx: '1200px',
+      },
     },
   },
   corePlugins: {

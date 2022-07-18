@@ -5,6 +5,7 @@ import HeroSection from './hero'
 import LaunchSection from './launch-section'
 import ThingsSection from './things-section'
 import CTASection from './cta-section'
+import CommunitySection from './community-section'
 
 const HomePageMain = () => {
   return (
@@ -14,6 +15,7 @@ const HomePageMain = () => {
       <LaunchSection />
       <MediaKitSection />
       <ThingsSection />
+      <CommunitySection />
       <CTASection />
     </SharedLayout>
   )

@@ -25,7 +25,7 @@ const CTASection = () => {
       </div>
       <div>
         <img
-          className="object-fill w-full h-full"
+          className="object-cover w-full h-full sm:object-contain sm:max-h-96 lg:max-h-max lg:object-fill"
           src="/images/home/home-phones.png"
           alt="CTA Image"
         />

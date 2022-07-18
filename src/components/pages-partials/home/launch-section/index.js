@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const LaunchSection = () => {
   return (
-    <div className="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48 lg:bg-launch-section lg:bg-right lg:bg-no-repeat">
+    <div className="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48 lg:bg-launch-section lg:bg-[center_right_-50%] lgx:bg-right lg:bg-no-repeat">
       <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
         <div>
           <div>
