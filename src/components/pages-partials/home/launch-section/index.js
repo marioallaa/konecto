@@ -1,5 +1,5 @@
 import { InboxGradient } from '@/components/common/icons'
-import NextLink from 'next/link'
+import Image from 'next/image'
 
 const LaunchSection = () => {
   return (
@@ -55,10 +55,12 @@ const LaunchSection = () => {
               <footer className="mt-3">
                 <div className="flex items-center space-x-3">
                   <div className="flex-shrink-0">
-                    <img
-                      className="w-6 h-6 rounded-full"
+                    <Image
+                      width="24"
+                      height="24"
+                      className="rounded-full"
                       src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
-                      alt=""
+                      alt="commentor image"
                     />
                   </div>
                   <div className="text-base font-medium">
@@ -78,7 +80,7 @@ const LaunchSection = () => {
             <img
               className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
               src="/images/home/launch-section.png"
-              alt=""
+              alt="Launch your Konecto in minutes"
             />
           </div>
         </div>
