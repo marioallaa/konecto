@@ -15,6 +15,12 @@
     --k-light-blue: #20d1fd;
     --k-purple: #9642ff;
     --gradient-main: linear-gradient(119.89deg, #20d1fd 0%, #9642ff 100%);
+    --gradient-main-secondary: linear-gradient(
+      152.75deg,
+      #1b0b7c 1.09%,
+      #563cc9 47.39%,
+      #49e9fb 113.92%
+    );
   }
 
   @font-face {

@@ -42,6 +42,9 @@ module.exports = {
         '.bg-gradient-primary': {
           background: 'var(--gradient-main)',
         },
+        '.bg-gradient-secondary': {
+          background: 'var(--gradient-main-secondary)',
+        },
         '.text-gradient-primary': {
           background: 'var(--gradient-main)',
           backgroundClip: 'text',

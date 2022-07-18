@@ -4,6 +4,7 @@ import MediaKitSection from './media-kit-section'
 import HeroSection from './hero'
 import LaunchSection from './launch-section'
 import ThingsSection from './things-section'
+import CTASection from './cta-section'
 
 const HomePageMain = () => {
   return (
@@ -13,6 +14,7 @@ const HomePageMain = () => {
       <LaunchSection />
       <MediaKitSection />
       <ThingsSection />
+      <CTASection />
     </SharedLayout>
   )
 }
