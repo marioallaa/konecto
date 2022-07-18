@@ -4,7 +4,7 @@ const CommunitySection = () => {
   return (
     <div className="relative">
       <div className="sm:px-6 lg:px-8">
-        <div className="relative px-4 py-16 min-h-[20rem] md:min-h-[36.8rem] sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+        <div className="relative px-4 py-16 min-h-[20rem] md:min-h-[32rem] sm:px-6 sm:py-24 lg:py-32 lg:px-8">
           <Image
             className="object-cover w-full h-full"
             src="/images/home/community.png"
