@@ -8,7 +8,6 @@ import {
   firebaseUpdateProfilePicture,
   firebaseUpdateProfilDetails,
 } from '@/firebase/utils'
-import Notification from '@/components/layout/notification'
 
 export default function Settings() {
   const router = useRouter()
@@ -147,22 +146,22 @@ export default function Settings() {
   return (
     <>
       <form
-        className="py-10 w-full px-2 sm:px-0 max-w-3xl lg:max-w-7xl mx-auto space-y-8 divide-y divide-gray-200"
+        className="w-full max-w-3xl px-2 py-10 mx-auto space-y-8 divide-y divide-gray-200 sm:px-0 lg:max-w-7xl"
         onSubmit={(e) => updateProfilePicture(e)}
       >
         <div className="space-y-8 divide-y divide-gray-200 sm:space-y-5">
           <div>
             <div>
-              <h3 className="text-lg leading-6 font-medium text-gray-900">
+              <h3 className="text-lg font-medium leading-6 text-gray-900">
                 Profile
               </h3>
-              <p className="mt-1 max-w-2xl text-sm text-gray-500">
+              <p className="max-w-2xl mt-1 text-sm text-gray-500">
                 This information will be displayed publicly so be careful what
                 you share.
               </p>
             </div>
 
-            <div className="mt-6 sm:mt-5 space-y-6 sm:space-y-5">
+            <div className="mt-6 space-y-6 sm:mt-5 sm:space-y-5">
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-center sm:border-t sm:border-gray-200 sm:pt-5">
                 <label
                   htmlFor="photo"
@@ -190,19 +189,19 @@ export default function Settings() {
             <button
               onClick={() => router.reload()}
               type="button"
-              className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="inline-flex justify-center px-4 py-2 ml-3 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               {loading ? (
                 <>
                   <svg
                     role="status"
-                    className="mr-2 w-5 h-5 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                    className="w-5 h-5 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
                     viewBox="0 0 100 101"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -227,12 +226,12 @@ export default function Settings() {
       </form>
 
       <form
-        className="py-10 w-full px-2 sm:px-0 max-w-3xl lg:max-w-7xl mx-auto space-y-8 divide-y divide-gray-200"
+        className="w-full max-w-3xl px-2 py-10 mx-auto space-y-8 divide-y divide-gray-200 sm:px-0 lg:max-w-7xl"
         onSubmit={(e) => updateProfileDetails(e)}
       >
         <div className="space-y-8 divide-y divide-gray-200 sm:space-y-5">
           <div>
-            <div className="mt-6 sm:mt-5 space-y-6 sm:space-y-5">
+            <div className="mt-6 space-y-6 sm:mt-5 sm:space-y-5">
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
                 <label
                   htmlFor="username"
@@ -248,7 +247,7 @@ export default function Settings() {
                     id="username"
                     onChange={handleChange}
                     autoComplete="given-name"
-                    className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                    className="block w-full max-w-lg border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm"
                   />
                 </div>
               </div>
@@ -268,7 +267,7 @@ export default function Settings() {
                     id="email"
                     onChange={handleChange}
                     autoComplete="given-name"
-                    className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                    className="block w-full max-w-lg border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm"
                   />
                 </div>
               </div>
@@ -288,7 +287,7 @@ export default function Settings() {
                     id="password"
                     onChange={handleChange}
                     autoComplete="given-name"
-                    className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                    className="block w-full max-w-lg border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm"
                   />
                 </div>
               </div>
@@ -308,7 +307,7 @@ export default function Settings() {
                     id="confirm-password"
                     onChange={handleChange}
                     autoComplete="given-name"
-                    className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md"
+                    className="block w-full max-w-lg border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm"
                   />
                 </div>
               </div>
@@ -321,19 +320,19 @@ export default function Settings() {
             <button
               onClick={() => router.reload()}
               type="button"
-              className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Cancel
             </button>
             <button
               type="submit"
-              className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="inline-flex justify-center px-4 py-2 ml-3 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               {infoLoading ? (
                 <>
                   <svg
                     role="status"
-                    className="mr-2 w-5 h-5 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+                    className="w-5 h-5 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
                     viewBox="0 0 100 101"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -356,14 +355,6 @@ export default function Settings() {
           </div>
         </div>
       </form>
-      {popup.state && (
-        <Notification
-          setter={setPopup}
-          bool={popup.state}
-          message={popup.message}
-          type={popup.messageType}
-        />
-      )}
     </>
   )
 }
