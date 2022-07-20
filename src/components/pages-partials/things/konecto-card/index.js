@@ -1,4 +1,41 @@
+import {
+  DirectUpIcon,
+  DiscountIcon,
+  HappyemojiIcon,
+  TreeIcon,
+} from '@/components/common/icons'
 import * as FutureImage from 'next/future/image'
+
+const cards = [
+  {
+    id: 1,
+    title: 'Eco-Friendly',
+    description:
+      'Ut enim ad minima veniam culture galaxies extraordinary claims require extraordinary evidence dispassionate extraterrestrial observer trillion.',
+    icon: TreeIcon,
+  },
+  {
+    id: 2,
+    title: 'Affordable',
+    description:
+      'Encyclopaedia galactica the carbon in our apple pies vastness is bearable only through love paroxysm of global death laws of physics take root.',
+    icon: DiscountIcon,
+  },
+  {
+    id: 3,
+    title: 'Always up-to-date',
+    description:
+      'Encyclopaedia galactica the carbon in our apple pies vastness is bearable only through love paroxysm of global death laws of physics take root.',
+    icon: DirectUpIcon,
+  },
+  {
+    id: 4,
+    title: 'Convenient',
+    description:
+      'Ut enim ad minima veniam culture galaxies extraordinary claims require extraordinary evidence dispassionate extraterrestrial observer trillion. ',
+    icon: HappyemojiIcon,
+  },
+]
 
 const ThingsKonectoCardSection = () => {
   return (
@@ -21,7 +58,24 @@ const ThingsKonectoCardSection = () => {
                   NFC-compatible devices.
                 </p>
 
-                <div></div>
+                <div className="grid gap-8 mb-8 md:grid-cols-2">
+                  {cards.map((card) => (
+                    <div key={card.id} className="flex items-center mt-6">
+                      <div>
+                        <card.icon className="w-8 h-8 mb-4 text-primary" />
+
+                        <div>
+                          <h3 className="inline-block text-lg font-semibold leading-6 text-gradient-primary">
+                            {card.title}
+                          </h3>
+                          <p className="mt-2 text-base leading-6 text-gray-500">
+                            {card.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
                 <div className="mt-6">
                   <a
                     href="#"

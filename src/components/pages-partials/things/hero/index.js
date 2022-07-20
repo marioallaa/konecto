@@ -15,6 +15,9 @@ const ThingsHero = () => {
     <>
       <div className="px-4 mx-auto mt-16 max-w-7xl sm:mt-24 sm:px-6">
         <div className="text-center">
+          <span className="px-3 py-0.5 mb-6 inline-block text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-primary rounded-full">
+            konecto things
+          </span>
           <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
             <span className="block text-white">Simple, Fast, Efficient</span>
             <span className="block text-gradient-primary">
@@ -42,7 +45,11 @@ const ThingsHero = () => {
             Trusted by over 26,000 forward-thinking companies
           </h2>
           <div>
-            <CompanyBanners companies={companies} w="min-w-[230px]" />
+            <CompanyBanners
+              companies={companies}
+              w="lg:min-w-[180px]"
+              className="gap-6 lg:gap-0"
+            />
           </div>
         </div>
       </div>

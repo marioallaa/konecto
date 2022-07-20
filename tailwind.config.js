@@ -53,6 +53,7 @@ module.exports = {
           background: 'var(--gradient-main)',
           backgroundClip: 'text',
           color: 'transparent',
+          textFillColor: 'transparent',
         },
       }
       addUtilities(utilities)
