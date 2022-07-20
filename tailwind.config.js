@@ -52,6 +52,7 @@ module.exports = {
         '.text-gradient-primary': {
           background: 'var(--gradient-main)',
           backgroundClip: 'text',
+          color: 'transparent',
         },
       }
       addUtilities(utilities)

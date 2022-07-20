@@ -4,9 +4,10 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Fragment } from 'react'
 import MobileNav from '../mobile/nav'
+import ActiveLink from '@/components/common/active-link'
 
 const navigation = [
-  { name: 'Things', href: '#' },
+  { name: 'Things', href: '/things' },
   { name: 'News', href: '#' },
   { name: 'F.A.Q', href: '#' },
   { name: 'Contact', href: '#' },
@@ -37,13 +38,15 @@ const Header = () => {
             </div>
             <div className="hidden space-x-8 md:flex md:ml-10">
               {navigation.map((item) => (
-                <a
+                <ActiveLink
                   key={item.name}
                   href={item.href}
-                  className="text-base font-medium text-white hover:text-gray-300"
+                  activeClassName="text-gradient-primary"
                 >
-                  {item.name}
-                </a>
+                  <a className="text-base font-medium text-white hover:text-gray-300">
+                    {item.name}
+                  </a>
+                </ActiveLink>
               ))}
             </div>
           </div>

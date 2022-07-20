@@ -27,7 +27,7 @@ const HeroSection = () => {
               </NextLink>
               <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
                 <span className="block">Level up your</span>
-                <span className="block pb-3 text-transparent text-gradient-primary sm:pb-5">
+                <span className="block pb-3 text-gradient-primary sm:pb-5">
                   Link-in-Bio
                 </span>
               </h1>
@@ -86,12 +86,6 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
-            {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
-            {/* <img
-                className="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg"
-                alt=""
-              /> */}
             <video
               autoPlay
               loop
