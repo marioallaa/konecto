@@ -1,10 +1,13 @@
-import {
-  StaticKitLogo,
-  TupleLogo,
-  WorkationLogo,
-} from '@/components/common/svgs'
+import CompanyBanners from '@/components/common/company-banners'
+import { Tile2, Tile3, Tile4 } from '@/components/common/svgs'
 import { ChevronRightIcon } from '@heroicons/react/solid'
 import NextLink from 'next/link'
+
+const companies = [
+  { id: 1, name: 'Tuple', logo: Tile3, url: '#' },
+  { id: 2, name: 'Workation', logo: Tile4, url: '#' },
+  { id: 3, name: 'StaticKit', logo: Tile2, url: '#' },
+]
 
 const HeroSection = () => {
   return (
@@ -70,17 +73,9 @@ const HeroSection = () => {
                   <span className="text-sm font-semibold uppercase">
                     Powered by
                   </span>
-                  <div className="flex items-center justify-between gap-2 mt-6">
-                    <a href="#">
-                      <TupleLogo />
-                    </a>
-                    <a href="#">
-                      <WorkationLogo />
-                    </a>
-                    <a href="#">
-                      <StaticKitLogo />
-                    </a>
-                  </div>
+                  <span className="flex">
+                    <CompanyBanners companies={companies} />
+                  </span>
                 </div>
               </div>
             </div>

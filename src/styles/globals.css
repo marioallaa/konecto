@@ -67,13 +67,12 @@
     @apply h-full antialiased font-base bg-body text-primary;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-secondary;
+  h1 {
+    @apply antialiased font-secondary;
+  }
+
+  p {
+    @apply text-gray-300;
   }
 
   button.btn-dark,
