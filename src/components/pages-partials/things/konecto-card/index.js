@@ -68,7 +68,7 @@ const ThingsKonectoCardSection = () => {
                           <h3 className="inline-block text-lg font-semibold leading-6 text-gradient-primary">
                             {card.title}
                           </h3>
-                          <p className="mt-2 text-base leading-6 text-gray-500">
+                          <p className="mt-2 text-base leading-6">
                             {card.description}
                           </p>
                         </div>
@@ -96,6 +96,7 @@ const ThingsKonectoCardSection = () => {
                 layout="raw"
                 width={1280}
                 height={720}
+                quality={50}
               />
             </div>
           </div>
