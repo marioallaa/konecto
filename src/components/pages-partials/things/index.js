@@ -1,5 +1,6 @@
 import SharedLayout from '@/components/layout/shared-layout'
 import ThingsHero from './hero'
+import ThingsKonectoBusinessSection from './konecto-business'
 import ThingsKonectoCardSection from './konecto-card'
 
 const ThingsPageMain = () => {
@@ -7,6 +8,7 @@ const ThingsPageMain = () => {
     <SharedLayout title="Things">
       <ThingsHero />
       <ThingsKonectoCardSection />
+      <ThingsKonectoBusinessSection />
     </SharedLayout>
   )
 }

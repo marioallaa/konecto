@@ -42,7 +42,7 @@ const ThingsKonectoCardSection = () => {
     <div className="relative pt-16 pb-32 overflow-hidden">
       <div className="relative">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-          <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+          <div className="max-w-xl px-4 mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div>
               <div className="mt-6">
                 <h2 className="text-4xl font-extrabold tracking-tight">
@@ -91,12 +91,12 @@ const ThingsKonectoCardSection = () => {
             <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full lg:min-h-[50rem]">
               <FutureImage
                 className="object-cover w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="/images/things/konecto-card.jpeg"
+                src="/images/things/konecto-card.png"
                 alt="Inbox user interface"
                 layout="raw"
                 width={1280}
                 height={720}
-                quality={50}
+                quality={70}
               />
             </div>
           </div>
