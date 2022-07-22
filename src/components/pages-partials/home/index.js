@@ -4,8 +4,8 @@ import MediaKitSection from './media-kit-section'
 import HeroSection from './hero'
 import LaunchSection from './launch-section'
 import ThingsSection from './things-section'
-import CTASection from './cta-section'
 import CommunitySection from './community-section'
+import { CTASection } from '@/components/shared-sections'
 
 const HomePageMain = () => {
   return (

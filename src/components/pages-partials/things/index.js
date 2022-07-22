@@ -1,4 +1,5 @@
 import SharedLayout from '@/components/layout/shared-layout'
+import { CTASection } from '@/components/shared-sections'
 import ThingsComparisonSection from './comparison'
 import ThingsHero from './hero'
 import ThingsKonectoBusinessSection from './konecto-business'
@@ -13,6 +14,7 @@ const ThingsPageMain = () => {
       <ThingsKonectoBusinessSection />
       <ThingsPricingSection />
       <ThingsComparisonSection />
+      <CTASection />
     </SharedLayout>
   )
 }
