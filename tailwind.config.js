@@ -42,10 +42,13 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
-    plugin(function ({ addUtilities }) {
+    plugin(function ({ addUtilities, addComponents }) {
       const utilities = {
         '.bg-gradient-primary': {
           background: 'var(--gradient-main)',
+        },
+        '.bg-gradient-primary-hover': {
+          background: 'var(--gradient-main-hover)',
         },
         '.bg-gradient-secondary': {
           background: 'var(--gradient-main-secondary)',
@@ -54,9 +57,14 @@ module.exports = {
           background: 'var(--gradient-main)',
           backgroundClip: 'text',
           color: 'transparent',
-          textFillColor: 'transparent',
+        },
+        '.text-gradient-primary-hover': {
+          background: 'var(--gradient-main-hover)',
+          backgroundClip: 'text',
+          color: 'transparent',
         },
       }
+
       addUtilities(utilities)
     }),
   ],

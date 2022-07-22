@@ -43,7 +43,7 @@ const Header = () => {
                   href={item.href}
                   activeClassName="text-gradient-primary"
                 >
-                  <a className="text-base font-medium text-white hover:text-gray-300">
+                  <a className="text-base font-medium text-white hover:text-gradient-primary-hover">
                     {item.name}
                   </a>
                 </ActiveLink>
