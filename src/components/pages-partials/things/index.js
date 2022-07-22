@@ -1,5 +1,5 @@
 import SharedLayout from '@/components/layout/shared-layout'
-import ThingsFullFeatures from './full-features'
+import ThingsComparisonSection from './comparison'
 import ThingsHero from './hero'
 import ThingsKonectoBusinessSection from './konecto-business'
 import ThingsKonectoCardSection from './konecto-card'
@@ -12,7 +12,7 @@ const ThingsPageMain = () => {
       <ThingsKonectoCardSection />
       <ThingsKonectoBusinessSection />
       <ThingsPricingSection />
-      <ThingsFullFeatures />
+      <ThingsComparisonSection />
     </SharedLayout>
   )
 }

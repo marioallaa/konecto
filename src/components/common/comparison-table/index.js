@@ -1,6 +1,7 @@
 import { CheckIcon, MinusIcon } from '@heroicons/react/outline'
 import React, { Fragment } from 'react'
 import { twMerge } from 'tailwind-merge'
+import NextLink from 'next/link'
 
 const ComparisonTable = ({ tiers, sections }) => {
   return (
@@ -10,27 +11,13 @@ const ComparisonTable = ({ tiers, sections }) => {
         {tiers.map((tier) => (
           <section key={tier.name}>
             <div className="px-4 mb-8">
-              <h2 className="text-lg font-medium leading-6 text-gray-900">
-                {tier.name}
-              </h2>
-              <p className="mt-4">
-                <span className="text-4xl font-extrabold text-gray-900">
-                  ${tier.priceMonthly}
-                </span>
-                <span className="text-base font-medium text-gray-500">/mo</span>
-              </p>
-              <p className="mt-4 text-sm text-gray-500">{tier.description}</p>
-              <a
-                href={tier.href}
-                className="block w-full py-2 mt-6 text-sm font-semibold text-center text-white border border-transparent rounded-md shadow bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
-              >
-                Buy {tier.name}
-              </a>
+              <h2 className="text-lg font-medium leading-6 ">{tier.name}</h2>
+              <p className="mt-4 text-sm text-gray-300">{tier.description}</p>
             </div>
 
             {sections.map((section) => (
               <table key={section.name} className="w-full">
-                <caption className="px-4 py-3 text-sm font-medium text-left text-gray-900 border-t border-gray-200 bg-gray-50">
+                <caption className="px-4 py-3 text-sm font-medium text-left bg-white bg-opacity-5">
                   {section.name}
                 </caption>
                 <thead>
@@ -43,9 +30,9 @@ const ComparisonTable = ({ tiers, sections }) => {
                     </th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-200">
+                <tbody className="">
                   {section.features.map((feature) => (
-                    <tr key={feature.name} className="border-t border-gray-200">
+                    <tr key={feature.name} className="">
                       <th
                         className="px-4 py-5 text-sm font-normal text-left text-gray-500"
                         scope="row"
@@ -83,13 +70,12 @@ const ComparisonTable = ({ tiers, sections }) => {
               </table>
             ))}
 
-            <div className="px-4 pt-5 border-t border-gray-200">
-              <a
-                href="#"
-                className="block w-full py-2 text-sm font-semibold text-center text-white border border-transparent rounded-md shadow bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
-              >
-                Buy {tier.name}
-              </a>
+            <div className="px-4 pt-5 ">
+              <NextLink href={tier.href}>
+                <a className="block w-full py-3 font-medium text-center text-white uppercase rounded-md shadow bg-gradient-primary">
+                  {tier.buttonText}
+                </a>
+              </NextLink>
             </div>
           </section>
         ))}
@@ -184,12 +170,11 @@ const ComparisonTable = ({ tiers, sections }) => {
               </th>
               {tiers.map((tier) => (
                 <td key={tier.name} className="px-6 pt-5">
-                  <a
-                    href="#"
-                    className="block w-full py-3 font-medium text-center text-white uppercase rounded-md shadow bg-gradient-primary"
-                  >
-                    Buy {tier.name}
-                  </a>
+                  <NextLink href={tier.href}>
+                    <a className="block w-full py-3 font-medium text-center text-white uppercase rounded-md shadow bg-gradient-primary">
+                      {tier.buttonText}
+                    </a>
+                  </NextLink>
                 </td>
               ))}
             </tr>
