@@ -28,6 +28,7 @@ module.exports = {
       },
       backgroundImage: {
         'launch-section': 'url(/images/home/launch-section.png)',
+        'price-section': 'url(/images/things/price-gradient.svg)',
       },
       screens: {
         xs: '475px',

@@ -1,7 +1,9 @@
 import SharedLayout from '@/components/layout/shared-layout'
+import ThingsFullFeatures from './full-features'
 import ThingsHero from './hero'
 import ThingsKonectoBusinessSection from './konecto-business'
 import ThingsKonectoCardSection from './konecto-card'
+import ThingsPricingSection from './pricing'
 
 const ThingsPageMain = () => {
   return (
@@ -9,6 +11,8 @@ const ThingsPageMain = () => {
       <ThingsHero />
       <ThingsKonectoCardSection />
       <ThingsKonectoBusinessSection />
+      <ThingsPricingSection />
+      <ThingsFullFeatures />
     </SharedLayout>
   )
 }
