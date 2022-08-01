@@ -12,39 +12,6 @@ const companies = [
 const HeroSection = () => {
   
   
-        let button = document.getElementById('checkBtn')
-        let field = document.getElementById('username')
-        console.log(button, field)
-
-
-        button.oninput = function() {
-            field.value = field.value.replace(/\s/g, '');
-            field.value = field.value.replace(/[^A-Za-z0-9_]/g, '');
-            field.value = field.value.toLowerCase()
-            document.getElementById('label').textContent = "Check"
-            document.getElementById('msg').classList.add('sr-only')
-        }
-
-        button.onclick = function(e) {
-            e.preventDefault()
-            document.getElementById('btnLoading').classList.remove('sr-only')
-            document.getElementById('label').classList.add('sr-only')
-            console.log(field.value)
-            fetch(`https://api.ogier.io/profile/check/${field.value}`).then(r => r.json()).then(v => {
-                console.log(v)
-                document.getElementById('btnLoading').classList.add('sr-only')
-                if (v.available) {
-                    window.location.href = 'https://app.ogier.io/continue/profile/' + field.value
-                } else {
-                    document.getElementById('label').textContent = "Check"
-                    document.getElementById('msg').textContent = "Username not available, please try again!"
-                    document.getElementById('label').classList.remove('sr-only')
-                    document.getElementById('msg').classList.remove('sr-only')
-                }
-            });
-        }
-  
-  
   return (
     <div className="pt-10 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
       <div className="mx-auto max-w-7xl lg:px-8">
@@ -122,7 +89,7 @@ const HeroSection = () => {
               muted
               className="w-full h-full mix-blend-lighten lg:scale-[2.4]"
             >
-              <source src="/videos/hero-video.mp4" type="video/mp4" />
+              <source src="https://ogier.io/ogier-movie.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
