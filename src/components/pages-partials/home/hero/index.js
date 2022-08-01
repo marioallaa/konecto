@@ -10,6 +10,41 @@ const companies = [
 ]
 
 const HeroSection = () => {
+  
+  
+        let button = document.getElementById('checkBtn')
+        let field = document.getElementById('username')
+        console.log(button, field)
+
+
+        button.oninput = function() {
+            field.value = field.value.replace(/\s/g, '');
+            field.value = field.value.replace(/[^A-Za-z0-9_]/g, '');
+            field.value = field.value.toLowerCase()
+            document.getElementById('label').textContent = "Check"
+            document.getElementById('msg').classList.add('sr-only')
+        }
+
+        button.onclick = function(e) {
+            e.preventDefault()
+            document.getElementById('btnLoading').classList.remove('sr-only')
+            document.getElementById('label').classList.add('sr-only')
+            console.log(field.value)
+            fetch(`https://api.ogier.io/profile/check/${field.value}`).then(r => r.json()).then(v => {
+                console.log(v)
+                document.getElementById('btnLoading').classList.add('sr-only')
+                if (v.available) {
+                    window.location.href = 'https://app.ogier.io/continue/profile/' + field.value
+                } else {
+                    document.getElementById('label').textContent = "Check"
+                    document.getElementById('msg').textContent = "Username not available, please try again!"
+                    document.getElementById('label').classList.remove('sr-only')
+                    document.getElementById('msg').classList.remove('sr-only')
+                }
+            });
+        }
+  
+  
   return (
     <div className="pt-10 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
       <div className="mx-auto max-w-7xl lg:px-8">
@@ -19,9 +54,9 @@ const HeroSection = () => {
               <NextLink href="#">
                 <a className="inline-flex items-center p-1 pr-2 text-white bg-gray-900 rounded-full sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
                   <span className="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-primary rounded-full">
-                    join community
+                    Claim Your Profile
                   </span>
-                  <span className="ml-4 text-sm">Visit our careers page</span>
+                  <span className="ml-4 text-sm">Join for free</span>
                   <ChevronRightIcon
                     className="w-5 h-5 ml-2 text-gray-500"
                     aria-hidden="true"
@@ -31,7 +66,7 @@ const HeroSection = () => {
               <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
                 <span className="block">Level up your</span>
                 <span className="block pb-3 text-gradient-primary sm:pb-5">
-                  Link-in-Bio
+                  Personal Brand
                 </span>
               </h1>
               <p className="text-base text-gray-300 sm:text-xl lg:text-lg xl:text-xl">
@@ -46,14 +81,14 @@ const HeroSection = () => {
                         Check username availability now!!!
                       </label>
                       <input
-                        id="email"
-                        type="email"
+                        id="username"
+                        type="text"
                         placeholder="konecto.me/karen-daily"
                         className="input-main input-dark"
                       />
                     </div>
                     <div className="self-end mt-3 sm:mt-0 sm:ml-3">
-                      <button type="submit" className="btn-gradient btn-thick">
+                      <button id="checkBtn" type="submit" className="btn-gradient btn-thick">
                         Check
                       </button>
                     </div>
