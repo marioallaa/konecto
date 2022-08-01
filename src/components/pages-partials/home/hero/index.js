@@ -87,7 +87,7 @@ const HeroSection = () => {
               autoPlay
               loop
               muted
-              className="w-full h-full mix-blend-lighten lg:scale-[2.4]"
+              className="w-full h-full mix-blend-lighten lg:scale-[1]"
             >
               <source src="https://ogier.io/ogier-movie.mp4" type="video/mp4" />
             </video>
